@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/kristianAndersen/byebye/issues"
   },
-  "homepage": "https://github.com/kristianAndersen/byebye#readme"
+  "homepage": "https://github.com/kristianAndersen/byebye#readme",
+  "dependencies": {
+    "sharp": "^0.26.3",
+    "svg-to-img": "^2.0.9",
+    "svg64": "^1.1.0"
+  }
 }
