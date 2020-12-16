@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/kristianAndersen/byebye#readme",
   "dependencies": {
-    "sharp": "^0.26.3",
     "svg-to-img": "^2.0.9",
-    "svg64": "^1.1.0"
   }
 }
