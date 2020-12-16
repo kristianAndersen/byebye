@@ -1,4 +1,6 @@
 
+const svg64 = require('svg64');
+
 export default (req, res) => {
 
 res.setHeader("Content-Type", "image/svg+xml");
@@ -61,6 +63,12 @@ function countdownTimer() {
   }
 
 
-res.status(200).send(svg)
+ 
+  const base64fromSVG = svg64(svg);
+  console.log(base64fromSVG)
+  res.status(200).send(base64fromSVG)
+
+
+
 
 }
