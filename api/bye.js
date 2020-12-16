@@ -1,9 +1,13 @@
 
-const svg64 = require('svg64');
+const svgToImg = require("svg-to-img");
+import fs from 'fs'
+const { join } = require('path')
+import path from 'path'
 
 export default (req, res) => {
 
-res.setHeader("Content-Type", "text/plain");
+//res.setHeader("Content-Type", "image/svg+xml");
+res.setHeader("Content-Type", 'image/jpeg');
 
 
 
@@ -64,9 +68,19 @@ function countdownTimer() {
 
 
  
-  const base64fromSVG = svg64(svg);
-  console.log(base64fromSVG)
-  res.status(200).send(base64fromSVG)
+  (async () => {
+    await svgToImg.from(svg).toJpeg({
+      path: "./example.jpeg"
+
+    });
+
+    const filePath = path.resolve('.', 'example.jpeg')
+    const imageBuffer = fs.readFileSync(filePath)
+
+
+    res.status(200).send(imageBuffer)
+  })();
+  //
 
 
 
