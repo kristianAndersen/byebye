@@ -3,7 +3,7 @@ const svg64 = require('svg64');
 
 export default (req, res) => {
 
-res.setHeader("Content-Type", "image/svg+xml");
+res.setHeader("Content-Type", "text/plain");
 
 
 
