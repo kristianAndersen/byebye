@@ -1,0 +1,19 @@
+{
+  "name": "byebye",
+  "version": "1.0.0",
+  "description": "bye bye bitches im out",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristianAndersen/byebye.git"
+  },
+  "author": "krilleandersen@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristianAndersen/byebye/issues"
+  },
+  "homepage": "https://github.com/kristianAndersen/byebye#readme"
+}
